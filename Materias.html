@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Promedio</title>
+    <link rel="stylesheet" href="EstiloBoton.css">
+</head>
+<body>
+
+    <nav class="barra">
+        <a href="index.html">Regresar al inicio</a>
+    </nav>
+
+    <h2>Evaluación de Promedio</h2>
+    <script>
+        let materia1 = parseFloat(prompt("Escribe tu calificación de la materia 1:"));
+        let materia2 = parseFloat(prompt("Escribe tu calificación de la materia 2:"));
+        let materia3 = parseFloat(prompt("Escribe tu calificación de la materia 3:"));
+        let promedio = (materia1 + materia2 + materia3) / 3;
+        if (promedio >= 6) {
+            alert("Tu promedio es " + promedio + ". ¡Felicidades, aprobaste!");
+        }
+        else {
+            let materiaMasBaja = "Materia 1";
+            let calificacionMinima = Mate1;
+            if (materia2 < calificacionMinima) {
+                calificacionMinima = Mate2;
+                materiaMasBaja = "Materia 2";
+            }
+            if (materia3 < calificacionMinima) {
+                calificacionMinima = Mate3;
+                materiaMasBaja = "Materia 3";
+            }
+            alert("Tu promedio es " + promedio + "\nReprobaste. \n\nRecomendación para " + materiaMasBaja + ":\n" + "Estudia mas");
+        }
+    </script>
+
+</body>
+</html>

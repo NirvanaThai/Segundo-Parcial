@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloBoton.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <nav class="barra">
+        <a href="index.html">Regresar al inicio</a>
+    </nav>
+
+    <script>
+          let continua=confirm("Desea agregar datos?");
+          if(continua){
+          let nombre=(prompt("Ingresa tu nombre"));
+          let edad=Number(prompt("Ingresa tu eddad"));
+          let especialidad=String(prompt("Ingresa tu especialidad"));
+          let correo=String(prompt("Ingresa tu correo electronico"));
+          
+            document.write("Tu nombre es : "+nombre);
+            document.write("Tu edad es : "+edad);
+            document.write("Tu especialidad es : "+especialidad);
+            document.write("Tu correo es: "+correo);
+          }else{
+            alert("Tengo flojera");
+          }
+    </script>
+  
+</body>
+</html>

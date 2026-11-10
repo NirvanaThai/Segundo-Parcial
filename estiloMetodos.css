@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe0ec, #f7b6d2);
+    min-height: 100vh;
+    padding: 35px;
+}
+
+/* Barra de navegacion */
+.barra {
+    background-color: #c0447b;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.barra a {
+    background-color: #fff0f6;
+    color: #a83d70;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.barra a:hover {
+    background-color: #f7b6d2;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Contenedor principal */
+.contenedor {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    padding: 55px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(150, 60, 100, 0.15);
+    margin: auto;
+}
+
+h1 {
+    color: #c0447b;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #888;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.opciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.opciones a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110px;
+    background-color: #fff0f6;
+    color: #a83d70;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.opciones a:hover {
+    background-color: #e879a8;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(200, 70, 130, 0.2);
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .contenedor {
+        padding: 35px;
+    }
+
+    .opciones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celulares */
+@media (max-width: 550px) {
+    body {
+        padding: 15px;
+    }
+
+    .barra {
+        padding: 15px;
+    }
+
+    .barra a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .opciones {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .opciones a {
+        min-height: 75px;
+        font-size: 16px;
+    }
+}
