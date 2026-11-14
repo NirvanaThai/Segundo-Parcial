@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloMetodos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="barra">
+        <a href="index.html">Regresar al inicio</a>
+        <a href="Metodos.html"> Regresar al menu</a>
+    </nav>
+    
+    <script>
+        
+        function mensaje(){
+            document.write("Van a pasar con 10 el examen \n");
+        }
+        mensaje();
+
+        function cafecito(){
+            document.write("\n Voy a disfrutar un cafecito ");
+        }
+        cafecito();
+
+        function saludo(nombre){
+            alert("bendecido dia " + nombre);
+        }
+        saludo("Nirvana")
+
+        function saludar(nombre){
+            alert("Hola, " + nombre);
+        }
+        saludar("Nirvana");
+        saludar("Thailyn");
+
+        function sumar (a, b){
+            return a + b;
+        }
+
+        let resultado = sumar(5, 3);
+        alert(resultado);
+        resultado = sumar(100, 200);
+        alert(resultado);
+        
+    </script>
+</body>
+</html>
